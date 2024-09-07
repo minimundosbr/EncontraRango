@@ -1,0 +1,23 @@
+restaurantes proximos de mim -> site onde identificara restaurantes/locais de comida proximo de vc;
+
+Recebe seu endereco (informado via usuario), e com isso, exibe os restaurantes, contatos e especialidade do local.
+
+Utilizar API do google para encontrar os restaurantes que estao proximos da localizacao informada (usar a ajuda do GEMINI para isso), e permitir que o usuario pesquise o tipo de comida que deseja usufruir, ou entao, por preco.
+
+Usar o JavaScript para exibir os resultados da pesquisa (sendo por preco/localizacao/tipo de comida).
+
+Permitir que o usuario usufrua do site sem login, sendo totalmente free to use.
+
+no footer, colocar a classica frase "Made with <3 by (link_linkedin) e adicionar as outras redes sociais profissionais (github, e-mail, etc).
+
+Isso acima era a ideia principal ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Infelizmente, como pra realizar isso iria precisar utilizar a API do google (onde fugiria do tema fornecido dentro da imersão), decidi por realizar filtros com restaurantes fictícios, onde você pode encontrar pela categoria de comida, preço barato ou algo nesse sentido.
+
+O surgimento da ideia veio da seguinte maneira, na cidade onde moro atualmente, tem diversos restaurantes e ambientes de alimentação no geral que acabam nao sendo tão notados pela quantidade existente hoje.
+
+Meu objetivo com esse projeto, era tentar criar um site onde poderia ser muito mais simples de encontrar restaurantes novos/próximos de voce, facilitando por exemplo, teu date com alguém, ou até mesmo, quando estiver retornando
+de um rolê.
+
+Simplifiquei um pouco o projeto, mas ainda assim deu um trabalho danado de pensar em como realizar isso e fazer com que o site seja, de alguma maneira, algo criativo e que ajude outros restaurantes novos da região.
+

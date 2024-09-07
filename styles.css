@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header{
+    /*Adicionar uma fonte maior para destaque; utilizar flexbox justify-content: space-around*/
+    /*Barra para separar o header do conteudo, usar background gradiente com o do site (exemplo, vermelho, usar vinho para destaque e cores douradas)*/
+    /*Modelo da barra abaixo do site que de uma impressao de 3D (ou seja, conexao do header com o body)*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #C0C0C0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+nav li {
+    margin: 0 10px;
+  }
+  nav li a{
+    color: #2f2f2f;
+    text-decoration: none;
+  }
+
+/*Estilizacao do body*/
+body{
+    font-family:"Playfair Display-bold", sans-serif; /* fonte do site [ENCONTRAR FONTE PARA O SITE]*/
+    background-color: #666666; /*Cor de fundo [PENSAR EM COR QUE COMBINE COM COMIDA E QUE NAO PARECA O IFOOD]*/
+    display:flex;/*Flexbox*/
+    flex-direction: column; 
+    justify-content: center;/*Centraliza conteudo*/
+    height:100vh;
+    margin: 0;/*Removendo margem padrao*/
+    padding: 0;/*Removendo padding padrao*/
+}
+
+/*Estilizando a tag H1*/
+h1{
+    font-size: 2.3rem;
+    color: #800000; /*cor da fonte na tag h1 [COR QUE COMBINE COM O BGCOLOR PARA FICAR EM HARMONIA [PREFERENCIA PARA CORES QUENTES]*/
+    text-align: center;
+    letter-spacing: normal;
+}
+
+/*Estilizando a tag section*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    /*tentar adicionar o efeito de derreter e exibir as opcoes na search-result*/
+}
+
+section input{
+    background-color: #C0C0C0;
+    width: 38rem;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #CC0000;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+
+/*Estilizando os botoes*/
+section button{
+    padding: 0.6rem 0.9rem;
+    border:none;
+    border-radius:1.5rem;
+    background-color:#FF0000;
+    color:#FFFFFF;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-image: linear-gradient(to right, transparent 25%, #666fff 75%);
+    background-size: 0% 100%;
+    transition: background-size 0.5s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*Adiciona o efeito de alterar a cor quando coloca o cursor em cima do botao*/
+section button:hover{
+    background-color: #CC0000;/*Alteracao de cor*/
+    background-size: 100% 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);/*Efeito de preenchimento de cor do botao*/
+}
+
+/*Personalizacao dos resultados da pesquisa*/
+.search-results{
+    width:fit-content;
+    height: 30vh;
+    overflow-y: scroll;
+    margin-top: 0.7rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    margin-bottom: 0.2rem;
+    box-sizing:border-box;
+}
+
+/*Estilizando titulos dos resultados*/
+.item-result{
+    background:#C0C0C0;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-result h2{
+    font-size: 1.3rem;
+    color: #CC9999;
+}
+
+/*Personaliza o link do item*/
+.item-result a{
+    text-decoration: none;/*Remocao do sublinhado*/
+    color: #8B4513;/*Adicionar uma cor que que destaque (o que combinaria, por exemplo, com um dourado?)*/
+}
+
+.item-result a:hover{
+    transform: translateY(-2px);
+    color: #CC0000;
+}
+
+/*Contextualizando melhor, vai estilizar o texto que convence o usuario a clicar no site com um breve resumo abaixo do link de entrada*/
+.descricao-meta{
+    font-family: "Roboto", sans-serif;
+    color: #CC0000;/*Adicionar cor*/
+    margin: 0.5rem 0;
+}
+
+.container {
+    color: #6a7f93;
+    display: flex;
+    flex-direction: column; /* Se os textos estiverem em linhas diferentes */
+    align-items: center;
+    height: 100px; /* Ajuste a altura conforme necessário */
+}
+
+.container a{
+    font-size: 2.0;
+    color: #0381f6;
+}
+
+footer{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C0C0C0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*Responsividade do site para telas menores*/
+@media (max-width: 750px){
+    h1{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input{
+        border-radius: 50%;
+        width: 23rem;
+        padding: 0.5rem;
+        height: 35px;
+        border: 2px solid #fff
+    }
+    .search-results{
+        width: 35rem;
+        height: 35rem;
+    }
+    .item-result h2{
+        font-size: 1.2rem;
+    }
+}
+
+/*Responsividade do site para celulares*/
+@media (max-width: 480px){
+    h1{
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input{
+        width: 17rem;
+    }
+
+    section button{
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .search-results{
+        width: 90%;
+        height: 50vh;
+    }
+
+    .item-result h2{
+        font-size: 1.1rem;
+    }
+
+    footer{
+        font-size: 0.9rem;
+    }
+}
+

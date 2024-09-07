@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncontraRango</title>
+</head>
+<body>
+    <!-- cabecalho do site-->
+    <header>
+        <nav>
+            <ul>
+              <li><a href="ideia_site_alura.txt">Surgimento da ideia</a></li>
+              <li><a href="https://www.linkedin.com/in/victor-hugo-araujo-fogaça-91220121a/">Sobre o dev</a></li>
+            </ul>
+          </nav>
+          </header>
+
+    <!--Conteudo principal do site-->
+    <main>
+        <!-- tagline da pagina-->
+        <h1>EncontraRango - Encontre restaurantes por palavras chaves</h1>
+        <!-- section contendo a barra de pesquisa para encontrar restaurantes-->
+        <section>
+            <!-- pensar em uma maneira de colocar o filtro de preco/filtro de tipo de comida para adicionar-->
+            <input type ="text" placeholder="Procure por tipos de cozinhas para encontrar o restaurante que deseja, como brasileiro ou japonês" id="label-search">
+            <button onclick ="searchFor()">Procurar</button>
+        </section>
+        <!-- Section para o resultado das pesquisas -->
+         <section class ="search-result" id="search-result"></section>
+    </main>
+
+    <!--Rodape do site-->
+    <footer>
+        <!--Modelo da barra abaixo do site que de uma impressao de 3D (ou seja, conexao do header com o body)-->
+        <div class="container">
+            <hr><nav>    
+                <ul>
+                    <li> with <i class = "fa fa-heart"></i> by <a href="https://github.com/minimundosbr"> Victor </a> for you</li>
+                </ul>
+            </nav>
+        </div>
+        </footer>
+    
+    <script src="places.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
