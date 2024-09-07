@@ -16,7 +16,7 @@ Para acessar o site, basta clicar no link -> [Site vercel](https://encontra-rang
 
 
 # Ajude na votação!
-Você pode auxiliar esse projeto/ideia a crescer e alcançar o pódio de votos! Basta entrar no [discord]() e reagir na estrela que estará abaixo do meu projeto em formato de reação da mensagem do discord.
+Você pode auxiliar esse projeto/ideia a crescer e alcançar o pódio de votos! Basta entrar no [discord](https://discord.com/channels/1277631721822748742/1277631722716008535/1282047518720397323) e reagir na estrela que estará abaixo do meu projeto em formato de reação da mensagem do discord.
 
 
 # Feedbacks e Dúvidas
